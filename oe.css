@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 50px;
+  width: 80%;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px 40px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+}
+
+.title{
+  
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+  
+}
+.title .title-name {
+  font-weight: 500;
+  font-size: 40px;
+  display: inline-block;
+  margin-bottom: px;
+  margin-bottom: 0px;
+
+  
+}
+
+.title img{
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.title-img2{
+  margin-left: 10px;
+  width: 80px;
+  object-fit: cover;
+  object-position: right;
+  /* height: 80px; */
+} 
+
+header p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.input-section, .actions, .mutation-section, #result {
+  margin-top: 20px;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin: 10px 0 5px 0;
+}
+
+input[type="text"], input[type="number"], select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1c7ed6;
+}
+
+#result {
+  text-align: center;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#result img{
+  width: 50px;
+  height: 50px;
+}
+
+#result h2 {
+  margin-bottom: 10px;
+}
+
+.mutation-section {
+  margin-top: 30px;
+}
+
+.mutation-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #888;
+}
+
+footer p {
+  font-size: 0.85em;
+}
+
+.mutation-button{
+  margin-top: 25px;
+}
