@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DNA to Amino Acid Translator</title>
+    <link rel="stylesheet" href="oe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+            <div class="title">
+                <img class="title-img1" src="https://t4.ftcdn.net/jpg/08/38/24/93/360_F_838249366_lXrIXMr7hiFsphAdH2UFawHhtBjSu9Ks.jpg" alt="">
+                <div class="title-name">DNA to Amino Acid Translator</div>
+            <img class="title-img2" src="https://spectrum.ieee.org/media-library/3d-model-of-a-protein.jpg?id=30828183&width=980" alt=""></div>
+            <p>Analyze DNA sequences, simulate mutations, and convert them into amino acids with full details.</p>
+        </header>
+
+        <section class="input-section">
+            <label for="sequence">Enter DNA Sequence:</label>
+            <input type="text" id="sequence" placeholder="e.g., ATGGCTGAATGGCTA">
+        </section>
+
+        <section class="actions">
+            <button onclick="translateSequence()">Translate Sequence</button>
+            <button onclick="countNucleotides()">Count Nucleotides</button>
+            <button onclick="findComplement()">Find Complementary Strand</button>
+            <button onclick="identifyPatterns()">Identify Patterns</button>
+        </section>
+        
+        <section id="result">
+            <!-- <img src="https://spectrum.ieee.org/media-library/3d-model-of-a-protein.jpg?id=30828183&width=980" alt=""> -->
+            <h2>Results:</h2>
+            <p id="output"></p>
+        </section>
+
+        <section class="mutation-section">
+            <h2>Mutation Simulation</h2>
+            <div class="mutation-inputs">
+                <label for="mutation-type">Select Mutation Type:</label>
+                <select id="mutation-type">
+                    <option value="substitution">Substitution</option>
+                    <option value="insertion">Insertion</option>
+                    <option value="deletion">Deletion</option>
+                </select>
+                <label for="position">Position (1-based index):</label>
+                <input type="number" id="position" min="1">
+                <label for="new-nucleotide">New Nucleotide (if applicable):</label>
+                <input type="text" id="new-nucleotide" maxlength="1" placeholder="A/T/C/G/U">
+            </div>
+            <button onclick="simulateMutation()" class="mutation-button">Simulate Mutation</button>
+        </section>
+    </div>
+
+    <script src="oe.js"></script>
+</body>
+</html>
